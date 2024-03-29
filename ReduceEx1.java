@@ -12,5 +12,6 @@ public class ReduceEx1 {
         System.out.println(" Filter the names start with 'r' and length == 4 and add 'Soft' to the names print all: ");
         String reduceName = names.stream().filter(name -> name.startsWith("r") && name.length() == 4).map(name -> name + "soft").reduce((name1,name2) -> name1 + name2).get();
         System.out.println(reduceName);
+        
     }
 }
